@@ -20,7 +20,7 @@
 // https://github.com/tastejs/todomvc/blob/master/tests/test.js
 // ***********************************************
 
-describe.skip('TodoMVC - React', function () {
+describe('TodoMVC - React', function () {
   // setup these constants to match what TodoMVC does
   let TODO_ITEM_ONE = 'buy some cheese'
   let TODO_ITEM_TWO = 'feed the cat'
@@ -253,7 +253,7 @@ describe.skip('TodoMVC - React', function () {
     })
   })
 
-  context('Item', function () {
+  context.skip('Item', function () {
     // New commands used here:
     // - cy.clear    https://on.cypress.io/api/clear
 
@@ -342,7 +342,7 @@ describe.skip('TodoMVC - React', function () {
     })
   })
 
-  context('Editing', function () {
+  context.skip('Editing', function () {
     // New commands used here:
     // - cy.blur    https://on.cypress.io/api/blur
 
@@ -452,7 +452,7 @@ describe.skip('TodoMVC - React', function () {
     })
   })
 
-  context('Counter', function () {
+  context.skip('Counter', function () {
     it('should display the current number of todo items', function () {
       cy.createTodo(TODO_ITEM_ONE)
       cy.get('.todo-count').contains('1 item left')
@@ -461,7 +461,7 @@ describe.skip('TodoMVC - React', function () {
     })
   })
 
-  context('Clear completed button', function () {
+  context.skip('Clear completed button', function () {
     beforeEach(function () {
       cy.createDefaultTodos().as('todos')
     })
@@ -526,7 +526,7 @@ describe.skip('TodoMVC - React', function () {
     })
   })
 
-  context('Routing', function () {
+  context.skip('Routing', function () {
     // New commands used here:
     // https://on.cypress.io/window
     // https://on.cypress.io/its
