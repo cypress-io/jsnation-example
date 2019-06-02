@@ -15,6 +15,6 @@
   "prHourlyLimit": 2,
   "timezone": "America/New_York",
   "schedule": [
-    "every weekend"
+    "every 1st of the month"
   ]
 }
