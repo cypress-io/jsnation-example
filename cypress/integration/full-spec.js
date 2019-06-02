@@ -342,7 +342,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Editing', function () {
+  context('Editing', function () {
     // New commands used here:
     // - cy.blur    https://on.cypress.io/api/blur
 
@@ -452,7 +452,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Counter', function () {
+  context('Counter', function () {
     it('should display the current number of todo items', function () {
       cy.createTodo(TODO_ITEM_ONE)
       cy.get('.todo-count').contains('1 item left')
