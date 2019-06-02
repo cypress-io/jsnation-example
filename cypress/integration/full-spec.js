@@ -253,7 +253,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Item', function () {
+  context('Item', function () {
     // New commands used here:
     // - cy.clear    https://on.cypress.io/api/clear
 
