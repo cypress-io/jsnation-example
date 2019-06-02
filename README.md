@@ -7,14 +7,22 @@ This example is a fork of the official [Redux TodoMVC example](https://github.co
 
 ```shell
 npm ci
-npm test
+npm run dev
 ```
 
-The full code coverage HTML report will be saved in `coverage`.
+After you execute Cypress tests, the full code coverage HTML report will be saved in `coverage`. You can also run all tests in headless mode with
+
+```shell
+npm run test:all
+```
 
 ## Code coverage
 
 For details how 100% code coverage works, see [cypress-example-todomvc-redux](https://github.com/cypress-io/cypress-example-todomvc-redux)
+
+## Visual testing
+
+See [Visual Testing](https://docs.cypress.io/guides/tooling/visual-testing.html) tooling guide
 
 ## License
 

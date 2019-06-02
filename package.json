@@ -11,7 +11,8 @@
     "start": "parcel serve public/index.html",
     "dev": "start-test 1234 cypress:open",
     "report:coverage": "nyc report --reporter=html",
-    "report:coverage:text": "nyc report --reporter=text"
+    "report:coverage:text": "nyc report --reporter=text",
+    "test:all": "start-test 1234 cypress:run"
   },
   "repository": {
     "type": "git",
