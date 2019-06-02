@@ -8,10 +8,17 @@ workflows:
       - cypress/run:
           # we need to start the web application
           start: npm start
+          # and we need to run visual testing using Percy
+          command: npx percy exec -- cypress run
           # there are no jobs to follow this one
           # so no need to save the workspace files (saves time)
           no-workspace: true
           post-steps:
+            # store Cypress-created screenshots and videos
+            - store_artifacts:
+                path: cypress/screenshots
+            - store_artifacts:
+                path: cypress/videos
             # store the created coverage report folder
             # you can click on it in the CircleCI UI
             # to see live static HTML site
