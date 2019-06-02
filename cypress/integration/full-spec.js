@@ -176,9 +176,11 @@ describe('TodoMVC - React', function () {
   })
 
   context('Mark all as completed', function () {
-    // New commands used here:
-    // - cy.check    https://on.cypress.io/api/check
-    // - cy.uncheck  https://on.cypress.io/api/uncheck
+    const completeAll = () => {
+      // complete all todos
+      // force it to click to make it work even without any CSS
+      cy.get('[data-cy-toggle-all]').click({ force: true })
+    }
 
     beforeEach(function () {
       // This is an example of aliasing
@@ -190,8 +192,7 @@ describe('TodoMVC - React', function () {
     })
 
     it('should allow me to mark all items as completed', function () {
-      // complete all todos
-      cy.get('[data-cy-toggle-all]').click()
+      completeAll()
 
       // get each todo li and ensure its class is 'completed'
       cy.get('@todos')
@@ -223,7 +224,7 @@ describe('TodoMVC - React', function () {
     })
 
     it('complete all checkbox should update state when items are completed / cleared', function () {
-      cy.get('[data-cy-toggle-all]').click()
+      completeAll()
 
       // alias the .toggle-all for reuse later
       cy.get('.toggle-all')
