@@ -1,5 +1,5 @@
-# cypress-example-todomvc-redux [![CircleCI](https://circleci.com/gh/cypress-io/cypress-example-todomvc-redux.svg?style=svg)](https://circleci.com/gh/cypress-io/cypress-example-todomvc-redux) [![renovate-app badge][renovate-badge]][renovate-app]
-> TodoMVC example with full e2e test code coverage
+# jsnation-example [![CircleCI](https://circleci.com/gh/cypress-io/jsnation-example.svg?style=svg)](https://circleci.com/gh/cypress-io/jsnation-example) [![renovate-app badge][renovate-badge]][renovate-app]
+> Example TodoMVC application for JSNation conference
 
 This example is a fork of the official [Redux TodoMVC example](https://github.com/reduxjs/redux/tree/master/examples/todomvc) with a set of [Cypress.io](https://www.cypress.io) end-to-end tests. The tests run instrumented application code and the code coverage is saved automatically using [cypress-istanbul](https://github.com/cypress-io/cypress-istanbul) plugin.
 
