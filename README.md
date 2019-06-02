@@ -10,35 +10,11 @@ npm ci
 npm test
 ```
 
-The full code coverage HTML report will be saved in `coverage`. You can also see text summary by running
+The full code coverage HTML report will be saved in `coverage`.
 
-```shell
-npm run report:coverage:text
-```
+## Code coverage
 
-## How it works
-
-Application is served by [Parcel bundler](https://parceljs.org) that uses [.babelrc](.babelrc) file to load [babel-plugin-istanbul](https://github.com/istanbuljs/babel-plugin-istanbul) plugin. This plugin instruments the application source code. During tests [cypress-istanbul](https://github.com/cypress-io/cypress-istanbul) merges and saves application code coverage information, rendering the full HTML report at the end.
-
-Unit tests like [cypress/integration/selectors-spec.js](cypress/integration/selectors-spec.js) that reach into hard to test code paths are also instrumented using the same [.babelrc](.babelrc) file, and this additional code coverage is automatically added to the application code coverage.
-
-### Read
-
-- [Code Coverage for End-to-end Tests](https://glebbahmutov.com/blog/code-coverage-for-e2e-tests/)
-- [Code Coverage by Parcel Bundler](https://glebbahmutov.com/blog/code-coverage-by-parcel/)
-- [Combined End-to-end and Unit Test Coverage](https://glebbahmutov.com/blog/combined-end-to-end-and-unit-test-coverage/)
-
-The official Cypress documentation guide to code coverage is coming, follow issue [#1705](https://github.com/cypress-io/cypress-documentation/issues/1705)
-
-## CircleCI
-
-Code coverage is saved on CircleCI as a test artifact. You can view the full report there by clicking on the "Artifacts" tab and then on "index.html"
-
-![Code coverage artifact](images/circle-report.png)
-
-The report is a static site, you can drill into each folder to see individual source files. This project should be 100% covered by Cypress tests:
-
-![100% code coverage](images/100.png)
+For details how 100% code coverage works, see [cypress-example-todomvc-redux](https://github.com/cypress-io/cypress-example-todomvc-redux)
 
 ## License
 
