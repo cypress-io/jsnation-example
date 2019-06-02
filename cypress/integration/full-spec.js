@@ -461,7 +461,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Clear completed button', function () {
+  context('Clear completed button', function () {
     beforeEach(function () {
       cy.createDefaultTodos().as('todos')
     })
@@ -501,7 +501,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Persistence', function () {
+  context('Persistence', function () {
     it('should persist its data', function () {
       // mimicking TodoMVC tests
       // by writing out this function
@@ -526,7 +526,7 @@ describe('TodoMVC - React', function () {
     })
   })
 
-  context.skip('Routing', function () {
+  context('Routing', function () {
     // New commands used here:
     // https://on.cypress.io/window
     // https://on.cypress.io/its
