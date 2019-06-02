@@ -26,3 +26,5 @@ workflows:
                 path: coverage
             # show code coverage numbers
             - run: npm run report:coverage:text
+            # and send coverage data to coveralls.io
+            - run: npm run coveralls
