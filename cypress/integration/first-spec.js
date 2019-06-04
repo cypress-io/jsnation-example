@@ -8,6 +8,7 @@ it('adds and completes todos', () => {
     .type('deploy{enter}')
   cy.get('.todo').should('have.length', 3)
   cy.percySnapshot('3 items')
+
   cy.get('.todo')
     .first()
     .find('.toggle')
