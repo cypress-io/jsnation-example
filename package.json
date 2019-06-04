@@ -13,7 +13,8 @@
     "report:coverage": "nyc report --reporter=html",
     "report:coverage:text": "nyc report --reporter=text",
     "test:all": "start-test 1234 cypress:run",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "instrument": "nyc instrument src instrumented --compact false"
   },
   "repository": {
     "type": "git",
