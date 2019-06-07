@@ -2,7 +2,6 @@
 
 it('adds and completes todos', () => {
   cy.visit('/')
-  cy.pause()
   cy.get('.new-todo')
     .type('write code{enter}')
     .type('write tests{enter}')
