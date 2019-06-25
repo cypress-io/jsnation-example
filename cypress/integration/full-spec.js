@@ -499,7 +499,7 @@ context('Clear completed button', function () {
   })
 })
 
-context.skip('Routing', function () {
+context('Routing', function () {
   beforeEach(visitWithInitialTodos)
 
   it('should allow me to display active items', function () {
