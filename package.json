@@ -37,7 +37,7 @@
     "@percy/cypress": "1.0.9",
     "babel-plugin-istanbul": "5.1.4",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "coveralls": "3.0.3",
+    "coveralls": "3.0.4",
     "cypress": "3.3.1",
     "@cypress/code-coverage": "1.6.1",
     "istanbul-lib-coverage": "2.0.5",
