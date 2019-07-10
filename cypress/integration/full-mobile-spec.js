@@ -1,3 +1,3 @@
 import { fullSpecTests } from './all-tests'
 
-fullSpecTests()
+fullSpecTests('iphone-6')
