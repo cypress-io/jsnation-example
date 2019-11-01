@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/cypress-io/jsnation-example#readme",
   "devDependencies": {
-    "@babel/core": "7.6.2",
-    "@babel/preset-react": "7.0.0",
+    "@babel/core": "7.6.4",
+    "@babel/preset-react": "7.6.3",
     "@percy/cypress": "1.0.9",
     "babel-plugin-istanbul": "5.2.0",
     "babel-plugin-transform-class-properties": "6.24.1",
